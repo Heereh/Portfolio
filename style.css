@@ -100,6 +100,12 @@ main {
   flex-direction: column;
   justify-content: center;
   width: 100%;
+  padding-bottom: 150px;
+}
+
+section {
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .hero {
@@ -108,7 +114,6 @@ main {
   align-items: center;
   flex-direction: column;
   height: 1000px;
-  max-width: 1200px;
 }
 
 .typewriter {
@@ -119,13 +124,13 @@ main {
 .type-1 {
   font-size: 18px;
   color: var(--cl-Fonts);
-  letter-spacing: 4px;
+  letter-spacing: 2px;
 }
 
 .typewriter .type-2 {
   font-size: 78px;
   letter-spacing: 4px;
-  color: var(--cl-Fonts); /*! Colocar color */
+  color: var(--cl-Fonts);
 }
 
 .typewriter .type-3 {
@@ -183,13 +188,125 @@ main {
   color: var(--cl-import);
 }
 
-/** Background video */
-.background-video {
-  position: fixed;
-  top: 0;
-  left: 0;
+/**Ideas'project  */
+#ideas-project {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 1200px;
+}
+
+#ideas-project #h2-idea {
+  color: var(--cl-Fonts);
+  font-size: 28px;
+  font-family: var(--Font-sourceCode);
+}
+
+.idea-one,
+.idea-two,
+.idea-three {
+  display: flex;
+  padding: 80px 0 40px 0;
+}
+
+.ideas-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.discord-featured,
+#discord-name,
+.idk-featured,
+#idk-name {
+  display: flex;
+  justify-content: flex-end;
+}
+.discord-featured,
+.spotify-featured,
+.idk-featured {
+  color: var(--cl-h2);
+  font-family: var(--Font-IBM);
+  font-size: 22px;
+}
+#discord-name,
+#spotify-name,
+#idk-name {
+  color: var(--cl-import);
+  font-family: var(--Font-IBM);
+  font-size: 20px;
+  padding-bottom: 30px;
+}
+
+.discord-descripcion,
+.spotify-descripcion,
+.idk-descripcion {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
+  display: flex;
+  justify-items: flex-start; /*! ARREGLAR  */
+}
+.discord-descripcion,
+.spotify-descripcion,
+.idk-descripcion > p {
+  color: var(--cl-Fonts);
+  font-family: var(--font-sans);
+  font-size: 18px;
+  padding: 0px 0 20px 0x;
+}
+
+.ideas-lenguajes {
+  display: flex;
+  justify-content: flex-start;
+}
+.ideas-lenguajes ul li {
+  color: var(--cl-import);
+  font-family: var(--font-sans);
+  padding: 20px 10px 10px 0px;
+  display: inline-block;
+  align-items: flex-end;
+}
+
+.links {
+  padding-top: 15px;
+}
+
+/** Footer  */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  bottom: 0;
+  border-top: 1px solid rgba(130, 147, 167, 0.3);
+}
+
+footer h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 42px;
+  letter-spacing: 3px;
+  font-family: var(--Font-IBM);
+  color: var(--cl-Font);
+  padding: 20px 0 20px 0;
+}
+
+.footer-relleno {
+  display: flex;
+  text-align: center;
+  width: 500px;
+  font-family: var(--font-sans);
+  color: var(--cl-Fonts);
+  padding-bottom: 20px;
+}
+
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.redes-sociales ul li {
+  display: inline-block;
+  padding: 0 5px 15px 5px;
 }
